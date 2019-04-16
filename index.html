@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <table width=”100%” border=”1″>
+
+        <?php
+              foreach($arr as $key => $value)
+                 {
+          
+        ?>
+        <tr>
+            <!–iniciamos la creacion de una fila–>
+                <td>
+                    <!– agregamos en la primera columna de cada fila cada key: ç “primero,segundo tercero”–>
+                        <?php echo $key; ?>
+                </td>
+                <?php foreach($value as $key=>$value)
+                              {
+                            ?>
+                <td>
+                    <!– En las 3 ultimas columnas restantes agregamos el nombre, el apellido y la edad de cada
+                        persona.–>
+                        <?php echo $value;?>
+                </td>
+                <?php
+                            }
+                           ?>
+        </tr>
+        <?php
+               }
+              ?>
+
+    </table>
+</body>
+
+</html>

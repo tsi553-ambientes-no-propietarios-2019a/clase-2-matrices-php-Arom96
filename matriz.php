@@ -16,6 +16,11 @@
 <body>
 
   <table width=”100%” border=”1″>
+  <tr>
+  <th>Nombre</th>
+  <th>Apellido</th>
+  <th>Edad</th>
+  </tr>
     <?php
           foreach($arr as $key => $value){         
 ?>
